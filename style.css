@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+}
+
+.main-content {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+  background-color: red;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.content {
+  background-color: aqua;
+}
+
+.header {
+  background-color: blue;
+}
