@@ -146,4 +146,53 @@ input {
 
 /*content style*/
 .content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+#projects {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-template-rows: auto 1fr;
+  padding: 1rem;
+}
+
+#projects > h5 {
+  padding: 0.5rem;
+}
+
+#cardContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 1rem;
+  grid-column-gap: 1rem;
+}
+
+#announcement {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: aqua;
+}
+
+#trending {
+  grid-area: "trending";
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  border-left: 0.5rem solid;
+  border-left-color: rgb(225, 120, 14);
+  padding: 1.2rem 0.6rem 0rem 0.6rem;
+}
+
+.cardText {
+  font-size: 0.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0.3rem 0 0.3rem 0;
+}
+
+.buttonHolder {
+  padding-top: 1rem;
 }
